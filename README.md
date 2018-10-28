@@ -20,9 +20,13 @@ Since we have 24 hours, we know that we will have to take some shortcuts and get
 Why didn't we do everything on-board the Arduino?  Because it would have slowed us down and it would be hard to build our multicar voting architecture. Plus, our architecture is intentionally silly.  
 
 ## Credits
-Harshita
+[@harshitaarora](https://github.com/harshitaarora)
+[@hnarasaki](https://github.com/hnarasaki)
+[@jeffcatania](https://github.com/jeffcatania)
+[@slothberr](https://github.com/slothberr)
+[@hnarasaki](https://github.com/hnarasaki)
+
 Samira
-Heidi
 Peter
 Joanna
 Rolf
