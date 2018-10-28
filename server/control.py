@@ -1,4 +1,3 @@
-import filelock
 import time
 
 class Control:
@@ -8,12 +7,14 @@ class Control:
         print(self.lock)
         if self.lock:
             return {
-                'status': 'failure'
+                'status': 'failure',
+		'request': req
             }
         else:
             self.lock = True
-            time.sleep(5)
+#            time.sleep(5)
             self.lock = False
             return {
-                'status': 'success'
+                'status': 'success',
+		'request': req
             }
