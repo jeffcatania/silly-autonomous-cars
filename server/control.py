@@ -7,10 +7,12 @@ class Control:
     lock = False 
 
     def process_start(self):
-       res = self.particle.call_function('3d0024000c47353136383631', 'power', 'on')
+       pass
+#       res = self.particle.call_function('3d0024000c47353136383631', 'power', 'on')
 
     def process_stop(self):
-       res = self.particle.call_function('3d0024000c47353136383631', 'power', 'off')
+       pass
+#       res = self.particle.call_function('3d0024000c47353136383631', 'power', 'off')
 	
 
     def process_request(self, req):
@@ -24,9 +26,10 @@ class Control:
             #self.lock = True
             res = {}
             if req['state'] == "true":
-               res = self.particle.call_function('3d0024000c47353136383631', 'dir', 'right')
-	  #particle_result = particle.call_function(device_id, 'led', 'off')
-#            time.sleep(5)
+               try:
+                   res = self.particle.call_function('3d0024000c47353136383631', 'dir', 'right')
+               except Exception as e:
+                   print(e)
             self.lock = False
             return {
                 'status': 'success',

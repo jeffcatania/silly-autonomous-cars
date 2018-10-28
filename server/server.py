@@ -28,7 +28,7 @@ def stop():
         }, indent=2)
 
 @app.route('/api/camera', methods=['GET'])
-def hello_heidi():
+def camera():
     device_id = request.args.get('device_id')
     state = request.args.get('state')
     r = c.process_request({
